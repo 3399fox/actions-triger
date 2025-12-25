@@ -3,26 +3,19 @@ export default {
     // 1. 配置任务列表：每个目标链接对应一个工作流
     const tasks = [
       {
-        target_url: "https://funmitglx.g1-eu-west.galaxycloud.app", // 监控的目标链接
-        owner: "jacobax",
-        repo: "galaxy",
-        workflow_id: "main.yml",
+        target_url: "https://example.com/page1", // 监控的目标链接
+        owner: "your-user",
+        repo: "repo-a",
+        workflow_id: "check-site.yml",
         ref: "main"
       },
       {
-        target_url: "https://pa738282--xdemo-web-server.modal.run",
-        owner: "jacobax",
-        repo: "python-argo-modal",
-        workflow_id: "modal_deploy.yml",
-        ref: "main"
+        target_url: "https://your-site.com/broken-link",
+        owner: "your-user",
+        repo: "repo-b",
+        workflow_id: "deploy.yml",
+        ref: "master"
       }
-//      {
-//        target_url: "https://pa738282--xdemo-web-server.modal.run",
-//        owner: "jacobax",
-//        repo: "python-argo-modal",
-//        workflow_id: "modal_deploy.yml",
-//        ref: "main"
-//      }
     ];
 
     const GITHUB_TOKEN = env.GITHUB_TOKEN;
