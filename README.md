@@ -15,3 +15,5 @@
 **验证完务必将 worker 链接 disable，以防被扫导致不断触发**  
 
 
+{ owner: "github-name",  repo: "project-name", workflow_id: "workflow-name", ref: "main" },
+    ];
